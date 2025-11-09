@@ -6,9 +6,11 @@ interface BouquetListProps {
 
 function BouquetList({ bouquets }: BouquetListProps) {
   return (
-    <div>
+    <div className="row g-4">
       {bouquets.map((bouquet) => (
-        <Bouquet key={bouquet.id} bouquet={bouquet} />
+        <div key={bouquet.id} className="col-12 col-sm-6 col-lg-4">
+          <Bouquet bouquet={bouquet} />
+        </div>
       ))}
     </div>
   );

@@ -4,4 +4,5 @@ interface Bouquet {
   descr: string;
   image: string;
   prix: number;
+  isLiked: boolean;
 }
